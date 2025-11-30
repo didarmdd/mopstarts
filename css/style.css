@@ -752,3 +752,420 @@ footer {
         display: block;
     }
 }
+
+/* --- Services Page Overhaul --- */
+
+/* Service Highlights */
+.highlights-section {
+    background-color: var(--white);
+    padding: var(--spacing-lg) 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.highlights-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    text-align: center;
+}
+
+.highlight-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.highlight-icon {
+    width: 48px;
+    height: 48px;
+    background-color: var(--accent);
+    color: var(--primary-dark);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.highlight-text {
+    font-weight: 600;
+    color: var(--text-dark);
+    font-size: 0.95rem;
+}
+
+/* Enhanced Service Cards */
+.service-card-enhanced {
+    background: var(--white);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.03);
+}
+
+.service-card-enhanced:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.service-card-header {
+    background-color: var(--bg-light);
+    padding: 2rem;
+    text-align: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.service-card-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    display: inline-block;
+}
+
+.service-card-body {
+    padding: 2rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.service-description {
+    color: #555;
+    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.service-pricing {
+    margin-top: auto;
+    margin-bottom: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.price-tag {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--primary-dark);
+    display: block;
+}
+
+.price-sub {
+    font-size: 0.85rem;
+    color: #777;
+    font-weight: 400;
+}
+
+/* How It Works */
+.how-it-works-section {
+    background-color: var(--bg-light);
+    padding: var(--spacing-xl) 0;
+}
+
+.steps-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+    position: relative;
+}
+
+.step-card {
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.step-number {
+    width: 40px;
+    height: 40px;
+    background-color: var(--primary);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    margin: 0 auto 1rem;
+    box-shadow: 0 4px 10px rgba(0, 180, 216, 0.3);
+}
+
+.step-title {
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: var(--text-dark);
+}
+
+/* Expectations Checklist */
+.expectations-section {
+    padding: var(--spacing-xl) 0;
+}
+
+.checklist-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    max-width: 800px;
+    margin: 2rem auto 0;
+}
+
+.checklist-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background: var(--white);
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    box-shadow: var(--shadow-sm);
+    border: 1px solid rgba(0, 0, 0, 0.03);
+}
+
+.check-icon {
+    color: var(--success);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* Add-On Services */
+.addons-section {
+    padding: var(--spacing-lg) 0;
+    background-color: var(--white);
+}
+
+.addons-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.addon-card {
+    background: var(--bg-light);
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: 1px solid transparent;
+    text-decoration: none;
+    color: var(--text-dark);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.addon-card:hover {
+    background: var(--white);
+    border-color: var(--primary);
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-md);
+}
+
+.addon-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.addon-title {
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: var(--primary-dark);
+}
+
+.addon-description {
+    font-size: 0.9rem;
+    color: #666;
+    line-height: 1.5;
+}
+
+/* Mobile Responsiveness Fixes */
+@media (max-width: 768px) {
+
+    /* Force single column for all grids EXCEPT highlights */
+    .services-grid,
+    .addons-grid,
+    .steps-grid,
+    .checklist-grid,
+    .why-grid,
+    .footer-grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    /* Horizontal Scroll for Highlights */
+    .highlights-grid {
+        display: flex !important;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        padding-bottom: 1rem;
+        gap: 1.5rem;
+        -webkit-overflow-scrolling: touch;
+        /* Smooth scroll on iOS */
+    }
+
+    .highlight-item {
+        min-width: 120px;
+        scroll-snap-align: start;
+        flex-shrink: 0;
+    }
+
+    /* Reduce spacing */
+    :root {
+        --spacing-lg: 3rem;
+        --spacing-xl: 5rem;
+    }
+
+    /* Adjust card padding */
+    .service-card-enhanced,
+    .addon-card,
+    .step-card,
+    .contact-card,
+    .stat-item {
+        padding: 1.5rem;
+    }
+
+    .service-card-body {
+        padding: 1.5rem;
+    }
+
+    .service-card-header {
+        padding: 1.5rem;
+    }
+
+    /* Typography adjustments */
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1.1rem;
+    }
+}
+
+/* --- Modern Hero Section --- */
+.hero-modern {
+    padding: var(--spacing-xl) 0;
+    background: linear-gradient(to right, #f8f9fa 50%, #fff 50%);
+    overflow: hidden;
+}
+
+.hero-modern .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+    color: var(--text-dark);
+    letter-spacing: -1px;
+}
+
+.hero-content p {
+    font-size: 1.25rem;
+    color: #555;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.hero-image-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    gap: 1rem;
+    height: 500px;
+    position: relative;
+}
+
+.hero-img-block {
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+    transition: transform 0.3s ease;
+}
+
+.hero-img-block:hover {
+    transform: translateY(-5px);
+}
+
+.hero-img-block img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Image 1: Large Main (Living Room) */
+.img-1 {
+    grid-column: 1 / 9;
+    grid-row: 1 / 13;
+    z-index: 1;
+}
+
+/* Image 2: Top Right (Kitchen) */
+.img-2 {
+    grid-column: 9 / 13;
+    grid-row: 1 / 7;
+    z-index: 2;
+}
+
+/* Image 3: Bottom Right (Detail) */
+.img-3 {
+    grid-column: 9 / 13;
+    grid-row: 7 / 13;
+    z-index: 2;
+}
+
+@media (max-width: 992px) {
+    .hero-modern {
+        background: #f8f9fa;
+        text-align: center;
+        padding: 4rem 0;
+    }
+
+    .hero-modern .container {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .hero-content {
+        margin: 0 auto;
+    }
+
+    .hero-content h1 {
+        font-size: 3rem;
+    }
+
+    .hero-image-grid {
+        height: 400px;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-image-grid {
+        display: none;
+        /* Hide complex grid on mobile for simplicity, or simplify it */
+    }
+
+    /* Optional: Show just one main image on mobile if desired, but for now hiding to keep it clean as per 'block image' request usually implies desktop impact */
+    .hero-modern {
+        padding-bottom: 2rem;
+    }
+}
