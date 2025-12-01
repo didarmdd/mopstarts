@@ -334,6 +334,7 @@ footer {
 }
 
 /* Mobile Responsive */
+/* Mobile Responsive */
 @media (max-width: 768px) {
     .hamburger {
         display: block;
@@ -359,7 +360,39 @@ footer {
     }
 
     .hero h1 {
-        font-size: 2.5rem;
+        font-size: 2.5rem !important; /* Override inline styles if any */
+    }
+    
+    .hero p {
+        font-size: 1rem !important;
+    }
+    
+    .section {
+        padding: var(--spacing-md) 0;
+    }
+    
+    .services-grid, 
+    .why-grid, 
+    .testimonial-grid, 
+    .highlights-grid,
+    .footer-grid,
+    .addons-grid,
+    .steps-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .stat-item {
+        margin-bottom: 1rem;
+    }
+    
+    .cta-box {
+        padding: 2rem 1rem;
+        margin-top: 2rem;
+    }
+    
+    .top-bar {
+        display: none; /* Hide top bar on mobile to save space */
     }
 }
 
@@ -540,6 +573,7 @@ footer {
 @media (max-width: 768px) {
     .contact-card {
         grid-template-columns: 1fr;
+        margin: 0 1rem;
     }
 
     .contact-hero h1 {
@@ -549,6 +583,14 @@ footer {
     .contact-info-side,
     .contact-form-side {
         padding: 2rem;
+    }
+    
+    .contact-wrapper {
+        margin-top: -50px;
+    }
+    
+    .contact-hero {
+        padding: 60px 0 100px;
     }
 }
 

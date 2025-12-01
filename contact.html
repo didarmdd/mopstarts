@@ -50,14 +50,14 @@
 <body>
     <div class="top-bar">
         <div class="container">
-            <a href="tel:0800667782">
+            <a href="tel:0225038526">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <path
                         d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
                     </path>
                 </svg>
-                0800 MOP START
+                022 503 8526
             </a>
             <a href="mailto:hello@mopstars.co.nz">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
@@ -114,7 +114,8 @@
 
     <section class="section">
         <div class="container">
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 4rem;">
+            <div
+                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 4rem; width: 100%;">
                 <div>
                     <h2 class="mb-2">Contact Information</h2>
                     <p class="mb-2">Have a question or need a custom quote? Reach out to us directly or use the form.
@@ -156,8 +157,8 @@
                                                 </div>
                                                 <div>
                                                     <h4>Call Us</h4>
-                                                    <p>0800 MOP START</p>
-                                                    <small style="opacity: 0.8;">Mon-Fri: 8am - 6pm</small>
+                                                    <p>022 503 8526</p>
+                                                    <small style="opacity: 0.8;">All days including weekend</small>
                                                 </div>
                                             </div>
 
@@ -175,7 +176,8 @@
                                                 <div>
                                                     <h4>Email Us</h4>
                                                     <p>hello@mopstars.co.nz</p>
-                                                    <small style="opacity: 0.8;">We reply within 24 hours</small>
+                                                    <small style="opacity: 0.8;">We reply within a couple of
+                                                        hours</small>
                                                 </div>
                                             </div>
 
@@ -197,64 +199,112 @@
                                             </div>
                                         </div>
 
-                                        <div style="margin-top: 2rem;">
-                                            <p style="opacity: 0.8; font-size: 0.9rem;">"MopStars transformed my space!
-                                                Highly recommend." - Sarah, Remuera</p>
-                                        </div>
+
                                     </div>
 
                                     <!-- Right Side: Form -->
                                     <div class="contact-form-side">
                                         <h3 style="color: var(--primary-dark); margin-bottom: 1.5rem;">Get a Free Quote
                                         </h3>
-                                        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-                                            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
-                                                <div>
-                                                    <label class="modern-label">Name</label>
-                                                    <input type="text" name="name" class="modern-input"
-                                                        placeholder="Your Name" required>
-                                                </div>
-                                                <div>
-                                                    <label class="modern-label">Phone</label>
-                                                    <input type="tel" name="phone" class="modern-input"
-                                                        placeholder="021 123 4567" required>
-                                                </div>
-                                            </div>
-
-                                            <label class="modern-label">Email</label>
-                                            <input type="email" name="email" class="modern-input"
-                                                placeholder="you@example.com" required>
-
-                                            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
-                                                <div>
-                                                    <label class="modern-label">Service Type</label>
-                                                    <select name="service" class="modern-input">
-                                                        <option value="residential">Residential Cleaning</option>
-                                                        <option value="commercial">Commercial Cleaning</option>
-                                                        <option value="move">Move In/Out</option>
-                                                        <option value="deep">Deep Clean</option>
-                                                    </select>
-                                                </div>
-                                                <div>
-                                                    <label class="modern-label">Region</label>
-                                                    <select name="region" class="modern-input">
-                                                        <option value="central">Central Auckland</option>
-                                                        <option value="north_shore">North Shore</option>
-                                                        <option value="west">West Auckland</option>
-                                                        <option value="east">East Auckland</option>
-                                                        <option value="south">South Auckland</option>
-                                                    </select>
+                                        <form id="contactForm" action="https://formspree.io/f/xjknrkzl" method="POST">
+                                            <div id="formSuccess"
+                                                style="display: none; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 3rem 2rem; border-radius: 16px; margin-bottom: 1.5rem; text-align: center; box-shadow: 0 20px 60px rgba(102, 126, 234, 0.4); animation: slideIn 0.5s ease-out;">
+                                                <div
+                                                    style="font-size: 4rem; margin-bottom: 1rem; animation: bounceIn 0.6s ease-out;">
+                                                    🎉</div>
+                                                <h4 style="margin: 0 0 0.75rem 0; font-size: 1.8rem; font-weight: 700;">
+                                                    Request Sent Successfully!</h4>
+                                                <p style="margin: 0; font-size: 1.1rem; opacity: 0.95;">Thank you for
+                                                    contacting MopStars!<br>We'll get back to you within a couple of
+                                                    hours.</p>
+                                                <div
+                                                    style="margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(255,255,255,0.2);">
+                                                    <p style="margin: 0; font-size: 0.9rem; opacity: 0.8;">Check your
+                                                        email for confirmation</p>
                                                 </div>
                                             </div>
+                                            <style>
+                                                @keyframes slideIn {
+                                                    from {
+                                                        opacity: 0;
+                                                        transform: translateY(-20px);
+                                                    }
 
-                                            <label class="modern-label">Message</label>
-                                            <textarea name="message" class="modern-input" rows="4"
-                                                placeholder="Tell us about your space (e.g., 3 bedrooms, office size, specific needs)..."
-                                                required></textarea>
+                                                    to {
+                                                        opacity: 1;
+                                                        transform: translateY(0);
+                                                    }
+                                                }
 
-                                            <button type="submit" class="btn btn-primary"
-                                                style="width: 100%; padding: 1rem; font-size: 1.1rem;">Send
-                                                Request</button>
+                                                @keyframes bounceIn {
+                                                    0% {
+                                                        transform: scale(0);
+                                                    }
+
+                                                    50% {
+                                                        transform: scale(1.2);
+                                                    }
+
+                                                    100% {
+                                                        transform: scale(1);
+                                                    }
+                                                }
+                                            </style>
+                                            <div id="formError"
+                                                style="display: none; background: #f8d7da; border: 1px solid #f5c6cb; color: #721c24; padding: 1.5rem; border-radius: 8px; margin-bottom: 1.5rem; text-align: center;">
+                                                <h4 style="margin: 0 0 0.5rem 0;">❌ Oops! Something went wrong</h4>
+                                                <p style="margin: 0;">Please try again or email us directly at
+                                                    hello@mopstars.co.nz</p>
+                                            </div>
+                                            <div id="formFields">
+                                                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                                                    <div>
+                                                        <label class="modern-label">Name</label>
+                                                        <input type="text" name="name" class="modern-input"
+                                                            placeholder="Your Name" required>
+                                                    </div>
+                                                    <div>
+                                                        <label class="modern-label">Phone</label>
+                                                        <input type="tel" name="phone" class="modern-input"
+                                                            placeholder="021 123 4567" required>
+                                                    </div>
+                                                </div>
+
+                                                <label class="modern-label">Email</label>
+                                                <input type="email" name="email" class="modern-input"
+                                                    placeholder="you@example.com" required>
+
+                                                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                                                    <div>
+                                                        <label class="modern-label">Service Type</label>
+                                                        <select name="service" class="modern-input">
+                                                            <option value="residential">Residential Cleaning</option>
+                                                            <option value="commercial">Commercial Cleaning</option>
+                                                            <option value="move">Move In/Out</option>
+                                                            <option value="deep">Deep Clean</option>
+                                                        </select>
+                                                    </div>
+                                                    <div>
+                                                        <label class="modern-label">Region</label>
+                                                        <select name="region" class="modern-input">
+                                                            <option value="central">Central Auckland</option>
+                                                            <option value="north_shore">North Shore</option>
+                                                            <option value="west">West Auckland</option>
+                                                            <option value="east">East Auckland</option>
+                                                            <option value="south">South Auckland</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+
+                                                <label class="modern-label">Message</label>
+                                                <textarea name="message" class="modern-input" rows="4"
+                                                    placeholder="Tell us about your space (e.g., 3 bedrooms, office size, specific needs)..."
+                                                    required></textarea>
+
+                                                <button type="submit" id="submitBtn" class="btn btn-primary"
+                                                    style="width: 100%; padding: 1rem; font-size: 1.1rem;">Send
+                                                    Request</button>
+                                            </div>
                                         </form>
                                     </div>
                                 </div>
@@ -297,7 +347,22 @@
                             <div class="container">
                                 <div class="footer-grid">
                                     <div class="footer-col">
-                                        <h1>Contact MopStars</h1>
+                                        <a href="index.html" class="logo" style="margin-bottom: 1rem;">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                style="color: var(--primary);">
+                                                <path
+                                                    d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z" />
+                                                <path d="M5 3v4" />
+                                                <path d="M19 17v4" />
+                                                <path d="M3 5h4" />
+                                                <path d="M17 19h4" />
+                                            </svg>
+                                            <div class="logo-text">
+                                                <span class="logo-main" style="color: white;">MopStars</span>
+                                            </div>
+                                        </a>
                                         <p>Making Auckland shine, one mop at a time.</p>
                                     </div>
                                     <div class="footer-col">
@@ -313,7 +378,7 @@
                                         <h4>Contact Us</h4>
                                         <ul>
                                             <li>📧 hello@mopstars.co.nz</li>
-                                            <li>📞 0800 MOP START</li>
+                                            <li>📞 022 503 8526</li>
                                             <li>📍 Auckland, New Zealand</li>
                                         </ul>
                                     </div>
@@ -327,8 +392,8 @@
                         <div class="chat-widget">
                             <div class="chat-popup">
                                 <button class="chat-close">&times;</button>
-                                <h4>Hi there! 👋</h4>
-                                <p>Looking for a sparkling clean home? How can I help you today?</p>
+                                <h4>Hey there 👋</h4>
+                                <p>Ready to make your place shine?<br>Tell me what you need and I'll sort it out.</p>
                                 <a href="contact.html" class="btn btn-primary"
                                     style="width: 100%; text-align: center; font-size: 0.9rem; padding: 10px;">Get a
                                     Quote</a>
@@ -343,6 +408,67 @@
                         </div>
 
                         <script src="js/main.js"></script>
+                        <script>
+                            // Handle contact form submission
+                            document.getElementById('contactForm').addEventListener('submit', async function (e) {
+                                e.preventDefault();
+
+                                const form = e.target;
+                                const submitBtn = document.getElementById('submitBtn');
+                                const formFields = document.getElementById('formFields');
+                                const formSuccess = document.getElementById('formSuccess');
+                                const formError = document.getElementById('formError');
+
+                                // Disable submit button and show loading state
+                                submitBtn.disabled = true;
+                                submitBtn.innerHTML = 'Sending...';
+
+                                // Hide any previous messages
+                                formSuccess.style.display = 'none';
+                                formError.style.display = 'none';
+
+                                try {
+                                    const formData = new FormData(form);
+                                    const response = await fetch(form.action, {
+                                        method: 'POST',
+                                        body: formData,
+                                        headers: {
+                                            'Accept': 'application/json'
+                                        }
+                                    });
+
+                                    if (response.ok) {
+                                        // Show success message
+                                        formSuccess.style.display = 'block';
+                                        formFields.style.display = 'none';
+
+                                        // Reset form
+                                        form.reset();
+
+                                        // Scroll to success message
+                                        formSuccess.scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+                                        // Reset form after 5 seconds
+                                        setTimeout(() => {
+                                            formSuccess.style.display = 'none';
+                                            formFields.style.display = 'block';
+                                            submitBtn.disabled = false;
+                                            submitBtn.innerHTML = 'Send Request';
+                                        }, 5000);
+                                    } else {
+                                        throw new Error('Form submission failed');
+                                    }
+                                } catch (error) {
+                                    // Show error message
+                                    formError.style.display = 'block';
+                                    submitBtn.disabled = false;
+                                    submitBtn.innerHTML = 'Send Request';
+
+                                    // Scroll to error message
+                                    formError.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                                }
+                            });
+                        </script>
 </body>
 
 </html>
