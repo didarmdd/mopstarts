@@ -1,0 +1,10 @@
+# Sitemap
+Sitemap: https://mopstars.co.nz/sitemap.xml
+
+# Allow all crawlers
+User-agent: *
+Allow: /
+
+# Disallow admin or private directories (if any)
+# Disallow: /admin/
+# Disallow: /private/
