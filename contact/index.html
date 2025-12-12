@@ -113,370 +113,607 @@
         </div>
     </nav>
 
-    <div class="section" style="background-color: var(--accent); padding-top: 6rem;">
-        <div class="container text-center">
-            <h1>Get in Touch</h1>
-            <p>We'd love to hear from you. Fill out the form below for a free quote.</p>
-        </div>
-    </div>
-
-    <section class="section">
+    <!-- Modern Hero Section -->
+    <section class="contact-hero">
         <div class="container">
-            <div
-                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 4rem; width: 100%;">
-                <div>
-                    <h2 class="mb-2">Contact Information</h2>
-                    <p class="mb-2">Have a question or need a custom quote? Reach out to us directly or use the form.
-                    </p>
+            <h2>Ready for a Spotless Space?</h2>
+            <p style="font-size: 1.2rem; opacity: 0.9;">Get your free quote today. We'll handle the mess, you enjoy the
+                rest.</p>
+        </div>
+    </section>
 
-                    <div style="margin-bottom: 2rem;">
-                        <h4 style="color: var(--primary);">Email</h4>
-                        <p>hello@mopstars.co.nz</p>
+    <!-- Quote Wizard Section -->
+    <section class="wizard-section">
+        <div class="container">
+            <div class="wizard-card">
+                <h2 class="text-center" style="color: var(--primary-dark); margin-bottom: 0.5rem;">Get a Free Quote</h2>
+                <p class="text-center mb-2" style="opacity: 0.8;">Tell us about your cleaning needs</p>
+
+                <!-- Wizard Container -->
+                <div class="wizard-container">
+                    <!-- Progress Bar -->
+                    <div class="wizard-progress">
+                        <div class="progress-bar" id="progressBar"></div>
+                        <div class="steps-indicator">
+                            <span class="step active" data-step="1">1</span>
+                            <span class="step" data-step="2">2</span>
+                            <span class="step" data-step="3">3</span>
+                            <span class="step" data-step="4">4</span>
+                        </div>
                     </div>
 
-                    <div style="margin-bottom: 2rem;">
-                        <!-- Modern Hero Section -->
-                        <section class="contact-hero">
-                            <div class="container">
-                                <h2>Ready for a Spotless Space?</h2>
-                                <p style="font-size: 1.2rem; opacity: 0.9;">Get your free quote today. We'll handle the
-                                    mess, you enjoy the rest.</p>
-                            </div>
-                        </section>
-
-                        <!-- Floating Contact Card Section -->
-                        <div class="contact-wrapper">
-                            <div class="container">
-                                <div class="contact-card">
-                                    <!-- Left Side: Contact Info -->
-                                    <div class="contact-info-side">
-                                        <div>
-                                            <h2 style="margin-bottom: 2rem;">Get in Touch</h2>
-
-                                            <div class="contact-info-item">
-                                                <div class="icon-circle">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                        viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                                        <path
-                                                            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
-                                                        </path>
-                                                    </svg>
-                                                </div>
-                                                <div>
-                                                    <h4>Call Us</h4>
-                                                    <p>022 503 8526</p>
-                                                    <small style="opacity: 0.8;">All days including weekend</small>
-                                                </div>
-                                            </div>
-
-                                            <div class="contact-info-item">
-                                                <div class="icon-circle">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                        viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                                        <path
-                                                            d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
-                                                        </path>
-                                                        <polyline points="22,6 12,13 2,6"></polyline>
-                                                    </svg>
-                                                </div>
-                                                <div>
-                                                    <h4>Email Us</h4>
-                                                    <p>hello@mopstars.co.nz</p>
-                                                    <small style="opacity: 0.8;">We reply within a couple of
-                                                        hours</small>
-                                                </div>
-                                            </div>
-
-                                            <div class="contact-info-item">
-                                                <div class="icon-circle">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                        viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                                                        <circle cx="12" cy="10" r="3"></circle>
-                                                    </svg>
-                                                </div>
-                                                <div>
-                                                    <h4>Service Area</h4>
-                                                    <p>Greater Auckland Region</p>
-                                                    <small style="opacity: 0.8;">North Shore, Central, West, East,
-                                                        South</small>
-                                                </div>
-                                            </div>
-                                        </div>
-
-
-                                    </div>
-
-                                    <!-- Right Side: Form -->
-                                    <div class="contact-form-side">
-                                        <h3 style="color: var(--primary-dark); margin-bottom: 1.5rem;">Get a Free Quote
-                                        </h3>
-                                        <form id="contactForm" action="https://formspree.io/f/xjknrkzl" method="POST">
-                                            <div id="formSuccess"
-                                                style="display: none; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 3rem 2rem; border-radius: 16px; margin-bottom: 1.5rem; text-align: center; box-shadow: 0 20px 60px rgba(102, 126, 234, 0.4); animation: slideIn 0.5s ease-out;">
-                                                <div
-                                                    style="font-size: 4rem; margin-bottom: 1rem; animation: bounceIn 0.6s ease-out;">
-                                                    🎉</div>
-                                                <h4 style="margin: 0 0 0.75rem 0; font-size: 1.8rem; font-weight: 700;">
-                                                    Request Sent Successfully!</h4>
-                                                <p style="margin: 0; font-size: 1.1rem; opacity: 0.95;">Thank you for
-                                                    contacting MopStars!<br>We'll get back to you within a couple of
-                                                    hours.</p>
-                                                <div
-                                                    style="margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(255,255,255,0.2);">
-                                                    <p style="margin: 0; font-size: 0.9rem; opacity: 0.8;">Check your
-                                                        email for confirmation</p>
-                                                </div>
-                                            </div>
-                                            <style>
-                                                @keyframes slideIn {
-                                                    from {
-                                                        opacity: 0;
-                                                        transform: translateY(-20px);
-                                                    }
-
-                                                    to {
-                                                        opacity: 1;
-                                                        transform: translateY(0);
-                                                    }
-                                                }
-
-                                                @keyframes bounceIn {
-                                                    0% {
-                                                        transform: scale(0);
-                                                    }
-
-                                                    50% {
-                                                        transform: scale(1.2);
-                                                    }
-
-                                                    100% {
-                                                        transform: scale(1);
-                                                    }
-                                                }
-                                            </style>
-                                            <div id="formError"
-                                                style="display: none; background: #f8d7da; border: 1px solid #f5c6cb; color: #721c24; padding: 1.5rem; border-radius: 8px; margin-bottom: 1.5rem; text-align: center;">
-                                                <h4 style="margin: 0 0 0.5rem 0;">❌ Oops! Something went wrong</h4>
-                                                <p style="margin: 0;">Please try again or email us directly at
-                                                    hello@mopstars.co.nz</p>
-                                            </div>
-                                            <div id="formFields">
-                                                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
-                                                    <div>
-                                                        <label class="modern-label">Name</label>
-                                                        <input type="text" name="name" class="modern-input"
-                                                            placeholder="Your Name" required>
-                                                    </div>
-                                                    <div>
-                                                        <label class="modern-label">Phone</label>
-                                                        <input type="tel" name="phone" class="modern-input"
-                                                            placeholder="021 123 4567" required>
-                                                    </div>
-                                                </div>
-
-                                                <label class="modern-label">Email</label>
-                                                <input type="email" name="email" class="modern-input"
-                                                    placeholder="you@example.com" required>
-
-                                                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
-                                                    <div>
-                                                        <label class="modern-label">Service Type</label>
-                                                        <select name="service" class="modern-input">
-                                                            <option value="residential">Residential Cleaning</option>
-                                                            <option value="commercial">Commercial Cleaning</option>
-                                                            <option value="move">Move In/Out</option>
-                                                            <option value="deep">Deep Clean</option>
-                                                        </select>
-                                                    </div>
-                                                    <div>
-                                                        <label class="modern-label">Region</label>
-                                                        <select name="region" class="modern-input">
-                                                            <option value="central">Central Auckland</option>
-                                                            <option value="north_shore">North Shore</option>
-                                                            <option value="west">West Auckland</option>
-                                                            <option value="east">East Auckland</option>
-                                                            <option value="south">South Auckland</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-
-                                                <label class="modern-label">Message</label>
-                                                <textarea name="message" class="modern-input" rows="4"
-                                                    placeholder="Tell us about your space (e.g., 3 bedrooms, office size, specific needs)..."
-                                                    required></textarea>
-
-                                                <button type="submit" id="submitBtn" class="btn btn-primary"
-                                                    style="width: 100%; padding: 1rem; font-size: 1.1rem;">Send
-                                                    Request</button>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- FAQ Section -->
-                        <section class="faq-section">
-                            <div class="container">
-                                <div class="text-center">
-                                    <h2 style="color: var(--primary-dark);">Frequently Asked Questions</h2>
-                                    <p>Everything you need to know about our service.</p>
-                                </div>
-                                <div class="faq-grid">
-                                    <div class="faq-item">
-                                        <h3>Do I need to be present?</h3>
-                                        <p>No, you don't! Many of our clients leave a key or provide an access code. We
-                                            are fully vetted and trusted.</p>
-                                    </div>
-                                    <div class="faq-item">
-                                        <h3>Do you bring your own supplies?</h3>
-                                        <p>Yes, we bring everything needed to make your space shine, including
-                                            eco-friendly cleaning products and equipment.</p>
-                                    </div>
-                                    <div class="faq-item">
-                                        <h3>Are you insured?</h3>
-                                        <p>Absolutely. MopStars is fully insured for your peace of mind. We take great
-                                            care of your property.</p>
-                                    </div>
-                                    <div class="faq-item">
-                                        <h3>How do I pay?</h3>
-                                        <p>We send an invoice after the clean is completed. You can pay via bank
-                                            transfer or credit card online.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-
-                        <footer>
-                            <div class="container">
-                                <div class="footer-grid">
-                                    <div class="footer-col">
-                                        <a href="/" class="logo" style="margin-bottom: 1rem;">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
-                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                                stroke-linecap="round" stroke-linejoin="round"
-                                                style="color: var(--primary);">
-                                                <path
-                                                    d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z" />
-                                                <path d="M5 3v4" />
-                                                <path d="M19 17v4" />
-                                                <path d="M3 5h4" />
-                                                <path d="M17 19h4" />
+                    <form id="quoteWizard" action="https://formspree.io/f/xjknrkzl" method="POST">
+                        <!-- Step 1: Service Type -->
+                        <div class="wizard-step active" id="step1">
+                            <h4 class="step-title">What type of cleaning do you need?</h4>
+                            <div class="options-grid">
+                                <label class="option-card">
+                                    <input type="radio" name="service_type" value="Residential" required checked>
+                                    <div class="card-content">
+                                        <span class="icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round">
+                                                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                                                <polyline points="9 22 9 12 15 12 15 22"></polyline>
                                             </svg>
-                                            <div class="logo-text">
-                                                <span class="logo-main" style="color: white;">MopStars</span>
-                                            </div>
-                                        </a>
-                                        <p>Making Auckland shine, one mop at a time.</p>
+                                        </span>
+                                        <span class="label">Residential</span>
                                     </div>
-                                    <div class="footer-col">
-                                        <h4>Quick Links</h4>
-                                        <ul>
-                                            <li><a href="/">Home</a></li>
-                                            <li><a href="/services/">Services</a></li>
-                                            <li><a href="/about/">About</a></li>
-                                            <li><a href="/contact/">Contact</a></li>
-                                        </ul>
+                                </label>
+                                <label class="option-card">
+                                    <input type="radio" name="service_type" value="Commercial">
+                                    <div class="card-content">
+                                        <span class="icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round">
+                                                <rect x="4" y="2" width="16" height="20" rx="2" ry="2"></rect>
+                                                <line x1="9" y1="22" x2="9" y2="22.01"></line>
+                                                <line x1="15" y1="22" x2="15" y2="22.01"></line>
+                                                <line x1="12" y1="22" x2="12" y2="22.01"></line>
+                                                <line x1="12" y1="17" x2="12" y2="17.01"></line>
+                                                <line x1="12" y1="12" x2="12" y2="12.01"></line>
+                                                <line x1="12" y1="7" x2="12" y2="7.01"></line>
+                                                <line x1="9" y1="17" x2="9" y2="17.01"></line>
+                                                <line x1="9" y1="12" x2="9" y2="12.01"></line>
+                                                <line x1="9" y1="7" x2="9" y2="7.01"></line>
+                                                <line x1="15" y1="17" x2="15" y2="17.01"></line>
+                                                <line x1="15" y1="12" x2="15" y2="12.01"></line>
+                                                <line x1="15" y1="7" x2="15" y2="7.01"></line>
+                                            </svg>
+                                        </span>
+                                        <span class="label">Commercial</span>
                                     </div>
-                                    <div class="footer-col">
-                                        <h4>Contact Us</h4>
-                                        <ul>
-                                            <li>📧 hello@mopstars.co.nz</li>
-                                            <li>📞 022 503 8526</li>
-                                            <li>📍 Auckland, New Zealand</li>
-                                        </ul>
+                                </label>
+                                <label class="option-card">
+                                    <input type="radio" name="service_type" value="Move In/Out">
+                                    <div class="card-content">
+                                        <span class="icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round">
+                                                <path
+                                                    d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z">
+                                                </path>
+                                                <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                                                <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                                            </svg>
+                                        </span>
+                                        <span class="label">Move In/Out</span>
                                     </div>
-                                </div>
-                                <div class="footer-bottom">
-                                    <p>&copy; 2024 MopStars. All rights reserved.</p>
-                                </div>
+                                </label>
+                                <label class="option-card">
+                                    <input type="radio" name="service_type" value="Deep Clean">
+                                    <div class="card-content">
+                                        <span class="icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round">
+                                                <path
+                                                    d="M12 2L9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2z">
+                                                </path>
+                                            </svg>
+                                        </span>
+                                        <span class="label">Deep Clean</span>
+                                    </div>
+                                </label>
                             </div>
-                        </footer>
-
-                        <div class="chat-widget">
-                            <div class="chat-popup">
-                                <button class="chat-close">&times;</button>
-                                <h4>Hey there 👋</h4>
-                                <p>Ready to make your place shine?<br>Tell me what you need and I'll sort it out.</p>
-                                <a href="/contact/" class="btn btn-primary"
-                                    style="width: 100%; text-align: center; font-size: 0.9rem; padding: 10px;">Get a
-                                    Quote</a>
-                            </div>
-                            <button class="chat-btn">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round">
-                                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
-                                </svg>
-                            </button>
                         </div>
 
-                        <script src="/js/main.js"></script>
-                        <script>
-                            // Handle contact form submission
-                            document.getElementById('contactForm').addEventListener('submit', async function (e) {
-                                e.preventDefault();
+                        <!-- Step 2: Property & Location (Common) -->
+                        <div class="wizard-step" id="step2">
+                            <h4 class="step-title">Property Details</h4>
+                            <div class="form-grid">
+                                <div class="form-group full-width">
+                                    <label class="form-label">Service Location</label>
+                                    <input type="text" name="location" class="form-control"
+                                        placeholder="Street Address or Suburb" required>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Property Type</label>
+                                    <select name="property_type" class="form-control" id="propertyType" required>
+                                        <option value="">Select Type...</option>
+                                        <option value="House">House</option>
+                                        <option value="Apartment">Apartment</option>
+                                        <option value="Townhouse">Townhouse</option>
+                                        <option value="Office">Office</option>
+                                        <option value="Retail">Retail</option>
+                                        <option value="Other">Other</option>
+                                    </select>
+                                </div>
 
-                                const form = e.target;
-                                const submitBtn = document.getElementById('submitBtn');
-                                const formFields = document.getElementById('formFields');
-                                const formSuccess = document.getElementById('formSuccess');
-                                const formError = document.getElementById('formError');
+                                <!-- Dynamic Size Inputs -->
+                                <div class="form-group" id="size-bedrooms">
+                                    <label class="form-label">Bedrooms</label>
+                                    <div class="counter-controls small">
+                                        <button type="button" class="counter-btn"
+                                            onclick="updateCounter('bedrooms', -1)">-</button>
+                                        <input type="number" name="bedrooms" id="bedrooms" value="3" readonly>
+                                        <button type="button" class="counter-btn"
+                                            onclick="updateCounter('bedrooms', 1)">+</button>
+                                    </div>
+                                </div>
+                                <div class="form-group" id="size-bathrooms">
+                                    <label class="form-label">Bathrooms</label>
+                                    <div class="counter-controls small">
+                                        <button type="button" class="counter-btn"
+                                            onclick="updateCounter('bathrooms', -1)">-</button>
+                                        <input type="number" name="bathrooms" id="bathrooms" value="2" readonly>
+                                        <button type="button" class="counter-btn"
+                                            onclick="updateCounter('bathrooms', 1)">+</button>
+                                    </div>
+                                </div>
+                                <div class="form-group" id="size-sqm" style="display: none;">
+                                    <label class="form-label">Approx Size (m²)</label>
+                                    <input type="number" name="sqm" class="form-control" placeholder="e.g. 200">
+                                </div>
+                            </div>
+                        </div>
 
-                                // Disable submit button and show loading state
-                                submitBtn.disabled = true;
-                                submitBtn.innerHTML = 'Sending...';
+                        <!-- Step 3: Service Specifics (Dynamic) -->
+                        <div class="wizard-step" id="step3">
+                            <h4 class="step-title">Service Details</h4>
 
-                                // Hide any previous messages
-                                formSuccess.style.display = 'none';
-                                formError.style.display = 'none';
+                            <!-- A. Residential Specifics -->
+                            <div id="details-residential" class="service-details" style="display: none;">
+                                <div class="form-group">
+                                    <label class="form-label">Type of Clean</label>
+                                    <select name="res_clean_type" class="form-control">
+                                        <option value="Regular">Regular Maintenance</option>
+                                        <option value="One-time">One-time Catch Up</option>
+                                    </select>
+                                </div>
+                                <div class="form-group full-width">
+                                    <label class="form-label">Areas to Clean (Select all that apply)</label>
+                                    <div class="checkbox-group">
+                                        <label><input type="checkbox" name="res_areas" value="Kitchen" checked>
+                                            Kitchen</label>
+                                        <label><input type="checkbox" name="res_areas" value="Bathrooms" checked>
+                                            Bathrooms</label>
+                                        <label><input type="checkbox" name="res_areas" value="Bedrooms" checked>
+                                            Bedrooms</label>
+                                        <label><input type="checkbox" name="res_areas" value="Living Areas" checked>
+                                            Living Areas</label>
+                                        <label><input type="checkbox" name="res_areas" value="Laundry"> Laundry</label>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Cleaning Level</label>
+                                    <select name="res_level" class="form-control">
+                                        <option value="Standard">Standard Clean</option>
+                                        <option value="Thorough">Thorough / Deep ish</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Any Pets?</label>
+                                    <select name="res_pets" class="form-control">
+                                        <option value="No">No</option>
+                                        <option value="Yes">Yes</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Parking Available?</label>
+                                    <select name="res_parking" class="form-control">
+                                        <option value="Yes">Yes</option>
+                                        <option value="No">No</option>
+                                    </select>
+                                </div>
+                            </div>
 
-                                try {
-                                    const formData = new FormData(form);
-                                    const response = await fetch(form.action, {
-                                        method: 'POST',
-                                        body: formData,
-                                        headers: {
-                                            'Accept': 'application/json'
-                                        }
-                                    });
+                            <!-- B. Commercial Specifics -->
+                            <div id="details-commercial" class="service-details" style="display: none;">
+                                <div class="form-group">
+                                    <label class="form-label">Business Type</label>
+                                    <input type="text" name="com_bus_type" class="form-control"
+                                        placeholder="Office, Retail, etc.">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Preferred Time</label>
+                                    <select name="com_time" class="form-control">
+                                        <option value="Business Hours">During Business Hours</option>
+                                        <option value="After Hours">After Hours</option>
+                                        <option value="Weekend">Weekend</option>
+                                    </select>
+                                </div>
+                                <div class="form-group full-width">
+                                    <label class="form-label">Areas Required</label>
+                                    <div class="checkbox-group">
+                                        <label><input type="checkbox" name="com_areas" value="Workstations" checked>
+                                            Workstations</label>
+                                        <label><input type="checkbox" name="com_areas" value="Bathrooms" checked>
+                                            Bathrooms</label>
+                                        <label><input type="checkbox" name="com_areas" value="Kitchen" checked>
+                                            Kitchen/Staff Room</label>
+                                        <label><input type="checkbox" name="com_areas" value="Floors" checked>
+                                            Floors</label>
+                                        <label><input type="checkbox" name="com_areas" value="Windows"> Windows</label>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Ongoing Contract?</label>
+                                    <select name="com_contract" class="form-control">
+                                        <option value="Yes">Yes</option>
+                                        <option value="No">No - Ad-hoc</option>
+                                    </select>
+                                </div>
+                            </div>
 
-                                    if (response.ok) {
-                                        // Show success message
-                                        formSuccess.style.display = 'block';
-                                        formFields.style.display = 'none';
+                            <!-- C. Move In/Out Specifics -->
+                            <div id="details-move" class="service-details" style="display: none;">
+                                <div class="form-group">
+                                    <label class="form-label">Service Type</label>
+                                    <select name="move_type" class="form-control">
+                                        <option value="Move Out">Move Out</option>
+                                        <option value="Move In">Move In</option>
+                                        <option value="End of Tenancy">End of Tenancy (Bond)</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Is property empty?</label>
+                                    <select name="move_empty" class="form-control">
+                                        <option value="Yes">Yes</option>
+                                        <option value="No">No</option>
+                                    </select>
+                                </div>
+                                <div class="form-group full-width">
+                                    <label class="form-label">Include Extras?</label>
+                                    <div class="checkbox-group">
+                                        <label><input type="checkbox" name="move_extras" value="Oven"> Oven</label>
+                                        <label><input type="checkbox" name="move_extras" value="Fridge"> Inside
+                                            Fridge</label>
+                                        <label><input type="checkbox" name="move_extras" value="Cupboards"> Inside
+                                            Cupboards</label>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">For Inspection?</label>
+                                    <select name="move_inspection" class="form-control">
+                                        <option value="Yes">Yes</option>
+                                        <option value="No">No</option>
+                                    </select>
+                                </div>
+                            </div>
 
-                                        // Reset form
-                                        form.reset();
+                            <!-- D. Deep Clean Specifics -->
+                            <div id="details-deep" class="service-details" style="display: none;">
+                                <div class="form-group">
+                                    <label class="form-label">Reason</label>
+                                    <select name="deep_reason" class="form-control">
+                                        <option value="Spring Clean">Spring Clean</option>
+                                        <option value="Post Renovation">Post Renovation</option>
+                                        <option value="One-off">First time pro clean</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Build-up Level</label>
+                                    <select name="deep_buildup" class="form-control">
+                                        <option value="Light">Light</option>
+                                        <option value="Medium">Medium</option>
+                                        <option value="Heavy">Heavy</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Last Pro Clean?</label>
+                                    <select name="deep_last_clean" class="form-control">
+                                        <option value="<3 Months">Less than 3 months</option>
+                                        <option value="3-6 Months">3-6 months</option>
+                                        <option value=">6 Months">Over 6 months</option>
+                                        <option value="Never">Never</option>
+                                    </select>
+                                </div>
+                                <div class="form-group full-width">
+                                    <label class="form-label">Focus Areas</label>
+                                    <textarea name="deep_focus" class="form-control" rows="2"
+                                        placeholder="e.g. Walls, Skirting boards, specific stains..."></textarea>
+                                </div>
+                            </div>
+                        </div>
 
-                                        // Scroll to success message
-                                        formSuccess.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                        <!-- Step 4: Schedule & Contact (Common) -->
+                        <div class="wizard-step" id="step4">
+                            <h4 class="step-title">Final Details</h4>
+                            <div class="form-grid">
+                                <div class="form-group">
+                                    <label class="form-label">Preferred Date</label>
+                                    <input type="date" name="date" class="form-control" required>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Time Window</label>
+                                    <select name="time_window" class="form-control">
+                                        <option value="Morning">Morning (8am - 12pm)</option>
+                                        <option value="Afternoon">Afternoon (12pm - 4pm)</option>
+                                        <option value="Anytime">Anytime</option>
+                                    </select>
+                                </div>
+                                <div class="form-group full-width">
+                                    <label class="form-label">Frequency</label>
+                                    <select name="frequency" class="form-control" id="finalFrequency">
+                                        <option value="One-off">One-off / Just this once</option>
+                                        <option value="Weekly">Weekly</option>
+                                        <option value="Fortnightly">Fortnightly</option>
+                                        <option value="Monthly">Monthly</option>
+                                    </select>
+                                </div>
+                                <div class="form-group full-width">
+                                    <label class="form-label">Special Notes (Access, etc.)</label>
+                                    <textarea name="message" class="form-control" rows="2"
+                                        placeholder="Gate codes, parking instructions, or specific concerns..."></textarea>
+                                </div>
+                                <hr style="grid-column: 1/-1; border: 0; border-top: 1px solid #eee; margin: 1rem 0;">
+                                <div class="form-group">
+                                    <label class="form-label">Full Name</label>
+                                    <input type="text" name="name" class="form-control" required placeholder="John Doe">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Email</label>
+                                    <input type="email" name="email" class="form-control" required
+                                        placeholder="john@example.com">
+                                </div>
+                                <div class="form-group full-width">
+                                    <label class="form-label">Phone</label>
+                                    <input type="tel" name="phone" class="form-control" required
+                                        placeholder="021 123 4567">
+                                </div>
+                            </div>
+                        </div>
 
-                                        // Reset form after 5 seconds
-                                        setTimeout(() => {
-                                            formSuccess.style.display = 'none';
-                                            formFields.style.display = 'block';
-                                            submitBtn.disabled = false;
-                                            submitBtn.innerHTML = 'Send Request';
-                                        }, 5000);
-                                    } else {
-                                        throw new Error('Form submission failed');
-                                    }
-                                } catch (error) {
-                                    // Show error message
-                                    formError.style.display = 'block';
-                                    submitBtn.disabled = false;
-                                    submitBtn.innerHTML = 'Send Request';
+                        <!-- Navigation Buttons -->
+                        <div class="wizard-nav">
+                            <button type="button" id="prevBtn" class="btn btn-outline"
+                                style="display: none;">Back</button>
+                            <button type="button" id="nextBtn" class="btn btn-primary">Next</button>
+                            <button type="submit" id="submitWizardBtn" class="btn btn-primary"
+                                style="display: none;">Get Quote</button>
+                        </div>
+                    </form>
 
-                                    // Scroll to error message
-                                    formError.scrollIntoView({ behavior: 'smooth', block: 'center' });
-                                }
-                            });
-                        </script>
+                    <!-- Success/Error Messages -->
+                    <div id="wizardSuccess" style="display: none; text-align: center; padding: 2rem;">
+                        <div style="font-size: 4rem; margin-bottom: 1rem;">🎉</div>
+                        <h3>Quote Request Sent!</h3>
+                        <p>We'll be in touch shortly with your custom quote.</p>
+                    </div>
+                    <div id="wizardError" style="display: none; text-align: center; padding: 2rem; color: red;">
+                        <h3>Oops! Something went wrong.</h3>
+                        <p>Please try again or email us directly.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Info Section -->
+    <section class="section" style="background: var(--bg-light);">
+        <div class="container">
+            <div class="text-center mb-2">
+                <h2 style="color: var(--primary-dark);">Or Reach Us Directly</h2>
+                <p>Have a quick question? We're here to help.</p>
+            </div>
+            <div class="contact-grid">
+                <!-- Call Us -->
+                <div class="contact-item">
+                    <div class="icon-circle">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                            </path>
+                        </svg>
+                    </div>
+                    <h4>Call Us</h4>
+                    <p>022 503 8526</p>
+                    <small style="opacity: 0.8;">All days including weekend</small>
+                </div>
+
+                <!-- Email Us -->
+                <div class="contact-item">
+                    <div class="icon-circle">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                            </path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                    </div>
+                    <h4>Email Us</h4>
+                    <p>hello@mopstars.co.nz</p>
+                    <small style="opacity: 0.8;">We reply within a couple of hours</small>
+                </div>
+
+                <!-- Service Area -->
+                <div class="contact-item">
+                    <div class="icon-circle">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg>
+                    </div>
+                    <h4>Service Area</h4>
+                    <p>Greater Auckland</p>
+                    <small style="opacity: 0.8;">North Shore, Central, West, East, South</small>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="text-center">
+                <h2 style="color: var(--primary-dark);">Frequently Asked Questions</h2>
+                <p>Everything you need to know about our service.</p>
+            </div>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>Do I need to be present?</h3>
+                    <p>No, you don't! Many of our clients leave a key or provide an access code. We
+                        are fully vetted and trusted.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Do you bring your own supplies?</h3>
+                    <p>Yes, we bring everything needed to make your space shine, including
+                        eco-friendly cleaning products and equipment.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Are you insured?</h3>
+                    <p>Absolutely. MopStars is fully insured for your peace of mind. We take great
+                        care of your property.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>How do I pay?</h3>
+                    <p>We send an invoice after the clean is completed. You can pay via bank
+                        transfer or credit card online.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="/" class="logo" style="margin-bottom: 1rem;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            style="color: var(--primary);">
+                            <path
+                                d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z" />
+                            <path d="M5 3v4" />
+                            <path d="M19 17v4" />
+                            <path d="M3 5h4" />
+                            <path d="M17 19h4" />
+                        </svg>
+                        <div class="logo-text">
+                            <span class="logo-main" style="color: white;">MopStars</span>
+                        </div>
+                    </a>
+                    <p>Making Auckland shine, one mop at a time.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/services/">Services</a></li>
+                        <li><a href="/about/">About</a></li>
+                        <li><a href="/contact/">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li>📧 hello@mopstars.co.nz</li>
+                        <li>📞 022 503 8526</li>
+                        <li>📍 Auckland, New Zealand</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 MopStars. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="chat-widget">
+        <div class="chat-popup">
+            <button class="chat-close">&times;</button>
+            <h4>Hey there 👋</h4>
+            <p>Ready to make your place shine?<br>Tell me what you need and I'll sort it out.</p>
+            <a href="/contact/" class="btn btn-primary"
+                style="width: 100%; text-align: center; font-size: 0.9rem; padding: 10px;">Get a
+                Quote</a>
+        </div>
+        <button class="chat-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+            </svg>
+        </button>
+    </div>
+
+    <script src="/js/main.js"></script>
+    <script>
+        // Handle contact form submission
+        document.getElementById('contactForm').addEventListener('submit', async function (e) {
+            e.preventDefault();
+
+            const form = e.target;
+            const submitBtn = document.getElementById('submitBtn');
+            const formFields = document.getElementById('formFields');
+            const formSuccess = document.getElementById('formSuccess');
+            const formError = document.getElementById('formError');
+
+            // Disable submit button and show loading state
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = 'Sending...';
+
+            // Hide any previous messages
+            formSuccess.style.display = 'none';
+            formError.style.display = 'none';
+
+            try {
+                const formData = new FormData(form);
+                const response = await fetch(form.action, {
+                    method: 'POST',
+                    body: formData,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                });
+
+                if (response.ok) {
+                    // Show success message
+                    formSuccess.style.display = 'block';
+                    formFields.style.display = 'none';
+
+                    // Reset form
+                    form.reset();
+
+                    // Scroll to success message
+                    formSuccess.scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+                    // Reset form after 5 seconds
+                    setTimeout(() => {
+                        formSuccess.style.display = 'none';
+                        formFields.style.display = 'block';
+                        submitBtn.disabled = false;
+                        submitBtn.innerHTML = 'Send Request';
+                    }, 5000);
+                } else {
+                    throw new Error('Form submission failed');
+                }
+            } catch (error) {
+                // Show error message
+                formError.style.display = 'block';
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = 'Send Request';
+
+                // Scroll to error message
+                formError.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }
+        });
+    </script>
 </body>
 
 </html>
