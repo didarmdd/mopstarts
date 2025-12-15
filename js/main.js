@@ -30,10 +30,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const chatClose = document.querySelector('.chat-close');
 
     if (chatPopup && chatBtn) {
-        // Show popup after 2 seconds
-        setTimeout(() => {
-            chatPopup.classList.add('active');
-        }, 2000);
+        // Show popup after 2 seconds (Only if NOT on contact page)
+        if (!window.location.pathname.includes('/contact/')) {
+            setTimeout(() => {
+                chatPopup.classList.add('active');
+            }, 2000);
+        }
 
         // Toggle popup on button click
         chatBtn.addEventListener('click', () => {
@@ -262,13 +264,16 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function validateStep(stepIndex) {
+        console.log("Validating step:", stepIndex);
         const currentStepEl = steps[stepIndex];
         // Only validate enabled inputs
         const requiredInputs = currentStepEl.querySelectorAll('input[required]:not(:disabled), select[required]:not(:disabled), textarea[required]:not(:disabled)');
 
         let isValid = true;
         requiredInputs.forEach(input => {
+            console.log("Checking input:", input.name, "Value:", input.value, "Disabled:", input.disabled);
             if (!input.value) {
+                console.log("Validation failed for:", input.name);
                 isValid = false;
                 input.style.borderColor = 'red';
                 // Remove error styling on change
@@ -277,15 +282,37 @@ document.addEventListener('DOMContentLoaded', () => {
                 }, { once: true });
             }
         });
+        console.log("Step valid:", isValid);
         return isValid;
     }
 
-    nextBtn.addEventListener('click', () => {
+    // Unified Next Handler
+    function handleNext(e) {
+        // Prevent double firing on some devices
+        if (e.type === 'touchend') {
+            e.preventDefault();
+        }
+
+        console.log("Next button triggered via:", e.type);
+
         if (validateStep(currentStep)) {
             currentStep++;
             showStep(currentStep);
+        } else {
+            console.log("Validation failed.");
+            // Optional: Shake animation or visual cue
+            const activeStep = document.querySelector('.wizard-step.active');
+            activeStep.classList.add('shake');
+            setTimeout(() => activeStep.classList.remove('shake'), 500);
+
+            // Helpful alert for mobile users who might miss the red borders
+            // alert("Please select an option to continue."); 
         }
-    });
+    }
+
+    // Add listeners for both touch and click
+    nextBtn.addEventListener('click', handleNext);
+    nextBtn.addEventListener('touchend', handleNext);
 
     prevBtn.addEventListener('click', () => {
         currentStep--;
