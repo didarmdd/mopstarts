@@ -1543,7 +1543,8 @@ footer {
 /* Navigation Buttons */
 .wizard-nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 1rem;
     margin-top: 2rem;
     padding-top: 1rem;
     border-top: 1px solid #e9ecef;
@@ -1634,11 +1635,52 @@ footer {
 @media (max-width: 768px) {
     .wizard-section {
         margin-top: -50px;
-        padding-left: 1rem;
-        padding-right: 1rem;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
     }
 
     .wizard-card {
-        padding: 1.5rem;
+        padding: 0.75rem;
+    }
+
+    /* Aggressive scaling */
+    .wizard-card h2 {
+        font-size: 1.5rem !important;
+        margin-bottom: 0.5rem !important;
+    }
+
+    .wizard-card p {
+        font-size: 0.9rem !important;
+        margin-bottom: 1rem !important;
+    }
+
+    .wizard-progress {
+        margin-bottom: 1rem;
+    }
+
+    .step-title {
+        font-size: 1.1rem;
+        margin-bottom: 1rem;
+    }
+
+    /* Compact Option Cards */
+    .option-card .card-content {
+        padding: 0.75rem;
+        min-height: auto;
+        aspect-ratio: auto;
+    }
+
+    .option-card .icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .option-card .icon svg {
+        width: 24px;
+        height: 24px;
+    }
+
+    .option-card .label {
+        font-size: 0.9rem;
     }
 }
