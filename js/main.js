@@ -277,7 +277,9 @@ document.addEventListener('DOMContentLoaded', () => {
             if (!input.value) {
                 console.log("Validation failed for:", input.name);
                 isValid = false;
-                input.style.borderColor = 'red';
+
+                // Add error class
+                input.classList.add('input-error');
 
                 if (!firstInvalidInput) {
                     firstInvalidInput = input;
@@ -285,15 +287,26 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 // Remove error styling on change
                 input.addEventListener('input', () => {
-                    input.style.borderColor = '#ddd';
+                    input.classList.remove('input-error');
                 }, { once: true });
             }
         });
 
         if (firstInvalidInput) {
+            // Scroll to the error
             firstInvalidInput.scrollIntoView({ behavior: 'smooth', block: 'center' });
-            // Optional: focus to bring up keyboard on mobile if it's a text input
+
+            // Focus the input
             firstInvalidInput.focus({ preventScroll: true });
+
+            // Specific fix for Date inputs on mobile
+            if (firstInvalidInput.type === 'date' && 'showPicker' in HTMLInputElement.prototype) {
+                try {
+                    firstInvalidInput.showPicker();
+                } catch (err) {
+                    console.log('showPicker failed (likely not triggered by user gesture):', err);
+                }
+            }
         }
 
         console.log("Step valid:", isValid);

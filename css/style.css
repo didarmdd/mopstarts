@@ -129,6 +129,12 @@ img {
     margin-bottom: var(--spacing-md);
 }
 
+/* Validation Error State */
+.input-error {
+    border-color: #dc3545 !important;
+    box-shadow: 0 0 0 3px rgba(220, 53, 69, 0.25) !important;
+}
+
 /* Top Bar */
 .top-bar {
     background-color: var(--primary-dark);
