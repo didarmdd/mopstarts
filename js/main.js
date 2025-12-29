@@ -270,18 +270,32 @@ document.addEventListener('DOMContentLoaded', () => {
         const requiredInputs = currentStepEl.querySelectorAll('input[required]:not(:disabled), select[required]:not(:disabled), textarea[required]:not(:disabled)');
 
         let isValid = true;
+        let firstInvalidInput = null;
+
         requiredInputs.forEach(input => {
             console.log("Checking input:", input.name, "Value:", input.value, "Disabled:", input.disabled);
             if (!input.value) {
                 console.log("Validation failed for:", input.name);
                 isValid = false;
                 input.style.borderColor = 'red';
+
+                if (!firstInvalidInput) {
+                    firstInvalidInput = input;
+                }
+
                 // Remove error styling on change
                 input.addEventListener('input', () => {
                     input.style.borderColor = '#ddd';
                 }, { once: true });
             }
         });
+
+        if (firstInvalidInput) {
+            firstInvalidInput.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            // Optional: focus to bring up keyboard on mobile if it's a text input
+            firstInvalidInput.focus({ preventScroll: true });
+        }
+
         console.log("Step valid:", isValid);
         return isValid;
     }
